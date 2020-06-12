@@ -5,3 +5,12 @@ plugins {
 dependencies {
     implementation(project(":module"))
 }
+
+tasks {
+    jar {
+        enabled = true
+    }
+    bootJar {
+        archiveClassifier.set("boot")
+    }
+}
